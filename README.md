@@ -13,7 +13,8 @@ __Libraries used :__
 1. Numpy (Linear algebra)
 2. Matplotlib (for ploting result images and test image)
 3. Tensorflow.keras.datasets (for downloading dataset)
-   
+
+## 1) KD-Tree 
 __Training Phase :__
 1. Convert image to vector 28x28 --> 784x1
 2. Apply PCA to reduce dimensions 784x1 --> dx1 (where d < 784) Learn meanvector of size 784x1 and eigen vectors matrix of size 784xd.
@@ -24,4 +25,8 @@ __Training Phase :__
 ![KD-Tree](https://github.com/GuruSajjan/Image-Search-With-KDTree-AND-Hierarchical-K-Means-Clustering/assets/49277337/4bb3fa7f-6e25-47ba-aea0-6aecfb07a0df)
 
 __Testing Phase :__
-
+1.Convert given test-image to vector 28x28 --> 784x1.
+2.Use PCA parameters i.e mean vector and Eigen-vectors matrix to convert 784x1 --> dx1 vector.
+3.Use KD-Tree parameter(Median) at each node from root till reaching one of the leaf node of KD-Tree.
+4.In each leaf node we might have around 2500 to 3500 simillar appearance images (out of 60000 images).
+5.To select top-k simillar images we can use cosine simillarity between test images and all images in that leaf node. 
