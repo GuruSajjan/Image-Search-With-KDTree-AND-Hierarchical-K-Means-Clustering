@@ -33,6 +33,9 @@ __Testing Phase :__
 
 ![KD-Tree-Test](https://github.com/GuruSajjan/Image-Search-With-KDTree-AND-Hierarchical-K-Means-Clustering/assets/49277337/c845cbf3-f049-48cc-9a1b-bf3bffa29590)
 
-__Results of KD-Tree on randomly selected test images :__
+__Result of KD-Tree on randomly selected test images :__
 
 ![KD-Tree-Result](https://github.com/GuruSajjan/Image-Search-With-KDTree-AND-Hierarchical-K-Means-Clustering/assets/49277337/52ca23a7-d3d3-4fd1-ad89-0b84ed62b650)
+
+## 2)Hierarchical K-Means-Clustering
+
