@@ -18,6 +18,10 @@ __Training Phase :__
 1. Convert image to vector 28x28 --> 784x1
 2. Apply PCA to reduce dimensions 784x1 --> dx1 (where d < 784) Learn meanvector of size 784x1 and eigen vectors matrix of size 784xd.
 3. Construct KD-Tree using dx1 vector representations and Learn and store parameter(Median) at each internal nodes of tree and create binary hash from root to each leaf node.
+
 (please look into code for implemetation of KD-Tree algo)
 
 ![KD-Tree](https://github.com/GuruSajjan/Image-Search-With-KDTree-AND-Hierarchical-K-Means-Clustering/assets/49277337/4bb3fa7f-6e25-47ba-aea0-6aecfb07a0df)
+
+__Testing Phase :__
+
